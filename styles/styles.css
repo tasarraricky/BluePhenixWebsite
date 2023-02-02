@@ -1,0 +1,79 @@
+header {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+}
+
+main {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+}
+
+.enroll h1 {
+    position: relative;
+    text-align: center;
+    font-size: 150px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    padding-top: 250px;
+}
+
+.enroll a {
+    color: rgb(242, 239, 39);
+    font-size: 80px;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 80px;
+    padding: 10px;
+    background-color: rgb(21, 66, 99);
+    opacity: .5;
+}
+
+.enroll a:hover {
+    color:rgb(157, 121, 49);
+    border: 1px solid rgb(244, 173, 31);
+    border-radius: 80px;
+    padding: 20px;
+    transition: .5s;
+}
+
+
+.logo img {
+    width: 60px;
+    position: absolute;
+    margin-top: 3px;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+.blue p {
+    width: 60px;
+    position: absolute;
+    margin-top: 3px;
+    margin-left: 30px;
+    display: flex;
+    color: white;
+}
+
+.back-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+@media (min-aspect-ratio: 16/9){
+    .back-video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .back-video {
+        width: auto;
+        height: 100%;
+    }
+}
